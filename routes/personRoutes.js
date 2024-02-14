@@ -11,7 +11,8 @@ router.post('/',async (req,res)=>{
     const response = await newPerson.save();
     console.log("Data Saved");
     res.status(200).json(response);
-  }
+  } 
+  // catch
   catch(err){
     console.error("An Error Occured" , err);
     res.status(500).send(err);
@@ -68,5 +69,5 @@ router.put('/:id', async (req,res) => {
 
   })
 
-
+// Just for testing
 module.exports = router;

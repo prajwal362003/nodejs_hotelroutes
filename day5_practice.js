@@ -10,7 +10,6 @@ const hotelList_Router = require('./routes/hotelList_Router');
 const app = express();
 app.use(bodyParser.json());
 
-
 // No need of this because app.use already defined for these three below
 // app.use('/', personRoutes);
 // app.use('/',menu_task);
